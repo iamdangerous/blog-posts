@@ -15,7 +15,7 @@ Key components
 
 **GATT** - Defines protocol(set of rules) on how data should be exchanged
 
-**GATT Server** - Provides functionality to create services and broadcast itself so other **Gatt Client** can connect to it. (can be slightly confused, I know but don't worry, this will be cleared later). Treat it as a web server.
+**GATT Server** - Provides functionality to create **Services** and broadcast itself so other **Gatt Client** can connect to it. (can be slightly confusing, I know but don't worry, this will be cleared later). Treat it as a web server.
 
 **Gatt Client** - It is responsible for scanning nearby **GATT Server**, connecting to it and exchanging data(in terms of **Characteristics**).
 
