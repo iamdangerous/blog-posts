@@ -7,7 +7,7 @@
 3. Setting up Gatt Client
 4. Sending Data over Bluetooth Low energy network
 
-#### Post 1 - How Bluetooth Low energy device Works in general
+#### Post 1 - How Bluetooth Low energy device works in general
 
 Key components
 
