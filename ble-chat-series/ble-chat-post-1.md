@@ -1,17 +1,17 @@
-# Ble Chat Application Series
+# Bluetooth Low energy Chat Application Series
 
-Overview of Chat application -
+### Overview of Chat application -
 
-1. How Ble works
+1. How Bluetooth Low energy device works
 2. Setting up Gatt Server
 3. Setting up Gatt Client
-4. Sending Data over Ble network
+4. Sending Data over Bluetooth Low energy network
 
-**Post 1 - How Ble Works in general**
+#### Post 1 - How Bluetooth Low energy device Works in general
 
 Key components
 
-**Ble** - Bloutooth Low energy device
+**Ble** - Bluetooth Low energy device
 
 **GATT** - Defines protocol(set of rules) on how data should be exchanged
 
