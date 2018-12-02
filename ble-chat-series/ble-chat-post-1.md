@@ -1,10 +1,13 @@
 # Ble Chat Application Series
 
-Overview of Chat application - 
+Overview of Chat application -
 1. How Ble works
+
 2. Setting up Gatt Server
-2. Setting up Gatt Client
-3. Sending Data over Ble network
+
+3. Setting up Gatt Client
+
+4. Sending Data over Ble network
 
 **Post 1 - How Ble Works in general**
 
