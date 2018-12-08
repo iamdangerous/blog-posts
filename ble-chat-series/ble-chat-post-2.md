@@ -31,7 +31,7 @@ val USER_META_DATA_UUID = UUID.fromString(USER_META_DATA_ID)
 ```
 
 ### Setup Gatt Server
-1. Get BluetoothManager - `Goto to step 2 after some delay eg - 2 seconds`
+1. Get BluetoothManager - `Goto step 2 after some delay eg - 2 seconds`
 2. Setup BluetoothLeAdvertiser
 3. Create GattServerCallback - `in this callback you will receive message`
 4. Open GattServer
@@ -136,4 +136,7 @@ mBluetoothLeAdvertiser?.startAdvertising(settings, data, mAdvertiseCallback);
 
 
 
-Reference - https://developer.android.com/guide/topics/connectivity/bluetooth-le
+Reference
+ - https://developer.android.com/guide/topics/connectivity/bluetooth-le
+ - https://www.bignerdranch.com/blog/bluetooth-low-energy-part-1/
+
