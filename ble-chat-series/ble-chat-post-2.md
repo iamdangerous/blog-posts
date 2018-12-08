@@ -41,19 +41,22 @@ val USER_META_DATA_UUID = UUID.fromString(USER_META_DATA_ID)
 
 Note - All above points are necessary
 
-1. Get BluetoothManager
+#### 1. Get BluetoothManager
 ```
 val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
 # Goto to step 2 after some delay eg - 2 seconds
 # Eg - Use a handler 
 Handler.postDelayed({callStep2()}, 2000L)
 ```
-2. Setup BluetoothLeAdvertiser
+<br>
+
+#### 2. Setup BluetoothLeAdvertiser
 ```
 val mBluetoothLeAdvertiser = mBluetoothAdapter.bluetoothLeAdvertiser;
 ```
+<br>
 
-3. Create GattServerCallback
+#### 3. Create GattServerCallback
 ```
     inner class GattServerCallback : BluetoothGattServerCallback() {
 
@@ -82,13 +85,15 @@ val mBluetoothLeAdvertiser = mBluetoothAdapter.bluetoothLeAdvertiser;
     }
     val gattServerCallback = GattServerCallback()
 ```
+<br>
 
-4. Open GATT Server
+#### 4. Open GATT Server
 ```
 var mGattServer: BluetoothGattServer? = mBluetoothManager.openGattServer(context, gattServerCallback)
 ```
+<br>
 
-5. Add service to the GATT Server
+#### 5. Add service to the GATT Server
 ```
 val service = BluetoothGattService(SERVICE_UUID, BluetoothGattService.SERVICE_TYPE_PRIMARY)
 
@@ -98,7 +103,9 @@ service.addCharacteristic(BleMessageUtil.prepareCharateristic(ONE_TO_ONE_MSG_UUI
 
 mGattServer?.addService(service)
 ```
-6. Create AdvertiseCallback
+<br>
+
+#### 6. Create AdvertiseCallback
 ```
 val mAdvertiseCallback = object : AdvertiseCallback() {
         override fun onStartSuccess(settingsInEffect: AdvertiseSettings) {
@@ -110,8 +117,9 @@ val mAdvertiseCallback = object : AdvertiseCallback() {
         }
     }
 ```
+<br>
 
-7. Start advertising your GATT server
+#### 7. Start advertising your GATT server
 ```
 if (mBluetoothLeAdvertiser == null) {
             return
@@ -131,7 +139,7 @@ val data = AdvertiseData.Builder()
 
 mBluetoothLeAdvertiser?.startAdvertising(settings, data, mAdvertiseCallback);
 ```
-
+<br>
 
 
 
