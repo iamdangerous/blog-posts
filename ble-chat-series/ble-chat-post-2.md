@@ -1,15 +1,16 @@
 # Bluetooth Low energy Chat Application Series
 
-### Overview of Chat application -
+### Overview of Chat application:
 
-1. How Bluetooth Low energy device works
+1. How Bluetooth Low energy device works [#Post 1](http://localhost:3004/p/5c02b6a0b5a04022765673bc)
 2. Setting up Gatt Server
 3. Setting up Gatt Client
 4. Sending Data over Bluetooth Low energy network
 
 #### Post 2 - Setting up Gatt Server
 
-Things to do
+#### Things to do
+
 1. Add permissions
 2. Setup UUIDs for your service, Characteristics and meta-data
 3. Setup Gatt Server
