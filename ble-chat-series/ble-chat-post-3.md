@@ -3,7 +3,7 @@
 ### Overview of Chat application:
 
 1. How Bluetooth Low energy device works [#Post 1](http://www.rahullohra.com/p/5c02b6a0b5a04022765673bc)
-2. Setting up Gatt Server
+2. Setting up Gatt Server [#Post 2](http://www.rahullohra.com/p/5c0c2264e7319d147ec27b63)
 3. Setting up Gatt Client
 4. Sending Data over Bluetooth Low energy network
 
@@ -278,7 +278,7 @@ try {
 ````
 >***mConnectedDevices***: A new variable, it should be defined in Gatt Server setup. I will show you the code below. handleFailureOfSendingMessage(): This functions basically handles the failed messages. For now we will do nothing
 
-## 11. 11. Initialise mConnectedDevices: Inside Gatt server setup
+## 11. Initialise mConnectedDevices: Inside Gatt server setup
 
 ````
 inner class GattServerCallback : BluetoothGattServerCallback() {

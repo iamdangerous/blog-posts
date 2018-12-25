@@ -4,7 +4,7 @@
 
 1. How Bluetooth Low energy device works [#Post 1](http://www.rahullohra.com/p/5c02b6a0b5a04022765673bc)
 2. Setting up Gatt Server
-3. Setting up Gatt Client
+3. Setting up Gatt Client [#Post 3](http://www.rahullohra.com/p/5c227ada01d2df134d78d45e)
 4. Sending Data over Bluetooth Low energy network
 
 #### Post 2 - Setting up Gatt Server
