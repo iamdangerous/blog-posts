@@ -47,13 +47,11 @@ val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothM
 # Eg - Use a handler 
 Handler.postDelayed({callStep2()}, 2000L)
 ```
-<br>
 
 #### 2. Setup BluetoothLeAdvertiser
 ```
 val mBluetoothLeAdvertiser = mBluetoothAdapter.bluetoothLeAdvertiser;
 ```
-<br>
 
 #### 3. Create GattServerCallback
 ```
@@ -84,13 +82,12 @@ val mBluetoothLeAdvertiser = mBluetoothAdapter.bluetoothLeAdvertiser;
     }
     val gattServerCallback = GattServerCallback()
 ```
-<br>
 
 #### 4. Open GATT Server
 ```
 var mGattServer: BluetoothGattServer? = mBluetoothManager.openGattServer(context, gattServerCallback)
 ```
-<br>
+<br></br>
 
 #### 5. Add service to the GATT Server
 ```
@@ -102,7 +99,7 @@ service.addCharacteristic(BleMessageUtil.prepareCharateristic(ONE_TO_ONE_MSG_UUI
 
 mGattServer?.addService(service)
 ```
-<br>
+<br></br>
 
 #### 6. Create AdvertiseCallback
 ```
@@ -116,7 +113,7 @@ val mAdvertiseCallback = object : AdvertiseCallback() {
         }
     }
 ```
-<br>
+<br></br>
 
 #### 7. Start advertising your GATT server
 ```
