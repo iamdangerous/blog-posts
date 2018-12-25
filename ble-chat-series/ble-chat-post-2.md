@@ -9,8 +9,6 @@
 
 #### Post 2 - Setting up Gatt Server
 
-#### Things to do
-
 1. Add permissions
 2. Setup UUIDs for your service, Characteristics and meta-data
 3. Setup Gatt Server
